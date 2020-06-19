@@ -1,0 +1,657 @@
+(tripletas)
+(personales)
+yo
+yo
+PP1CSN00
+me
+yo
+PP1CS000
+mí
+yo
+PP1CSO00
+nos
+yo
+PP1CP000
+nosotras
+yo
+PP1FP000
+nosotros
+yo
+PP1MP000
+conmigo
+yo
+PP1CSO00
+te
+tú
+PP2CS000
+ti
+tu
+PP2CSO00
+tú
+tú
+PP2CSN00
+os
+tú
+PP2CP000
+usted
+tú
+PP2CS00P
+ustedes
+tú
+PP2CP00P
+vos
+tú
+PP3CS00P
+vosotras
+tú
+PP2FP000
+vosotros
+tú
+PP2MP000
+contigo
+tú
+PP2CNO00
+él
+él
+PP3MS000
+ella
+él
+PP3FS000
+ellas
+él
+PP3FP000
+ello
+él
+PP3CS000
+ellos
+él
+PP3MP000
+la
+él
+PP3FSA00
+las
+él
+PP3FPA00
+lo
+él
+PP3MSA00
+lo
+él
+PP3CNA00
+los
+él
+PP3MPA00
+le
+él
+PP3CSD00
+les
+él
+PP3CPD00
+se
+él
+PP3CN000
+sí
+él
+PP3CNO00
+consigo
+él
+PP3CNO00
+(demostrativos)
+aquéllas
+aquél
+PD3FP000
+aquélla
+aquél
+PD3FS000
+aquéllos
+aquél
+PD3MP000
+aquél
+aquél
+PD3MS000
+aquellas
+aquel
+PD3FP000
+aquella
+aquel
+PD3FS000
+aquellos
+aquel
+PD3MP000
+aquel
+aquel
+PD3MS000
+aquello
+aquello
+PD3CS000
+ésas
+ése
+PD3FP000
+ésa
+ése
+PD3FS000
+esas
+ese
+PD3FP000
+esa
+ese
+PD3FS000
+esos
+ese
+PD3MP000
+ese
+ese
+PD3MS000
+ésos
+ése
+PD3MP000
+ése
+ése
+PD3MS000
+eso
+eso
+PD3CS000
+esotra
+esotro
+PD3FS000
+esotro
+esotro
+PD3MS000
+esta
+este
+PD3FS000
+éstas
+éste
+PD3FP000
+ésta
+éste
+PD3FS000
+estas
+este
+PD3FP000
+esta
+este
+PD3FS000
+estos
+este
+PD3MP000
+este
+este
+PD3MS000
+éstos
+éste
+PD3MP000
+éste
+éste
+PD3MS000
+esto
+esto
+PD3CS000
+estotra
+estotro
+PD3FS000
+estotro
+estotro
+PD3MS000
+(posesivos)
+mía
+mío
+PX3FS010
+mías
+mío
+PX3FP010
+mío
+mío
+PX3MS010
+míos
+mío
+PX3MP010
+nuestra
+nuestro
+PX3FS040
+nuestras
+nuestro
+PX3FP040
+nuestro
+nuestro
+PX3MS040
+nuestros
+nuestro
+PX3MP040
+suya
+suyo
+PX3FS000
+suyas
+suyo
+PX3FP000
+suyo
+suyo
+PX3MS000
+suyos
+suyo
+PX3MP000
+tuya
+tuyo
+PX3FS020
+tuyas
+tuyo
+PX3FP020
+tuyo
+tuyo
+PX3MS020
+tuyos
+tuyo
+PX3MP020
+vuestra
+vuestro
+PX3FS050
+vuestras
+vuestro
+PX3FP050
+vuestro
+vuestro
+PX3MS050
+vuestros
+vuestro
+PX3MP050
+(indefinidos)
+algo
+algo
+PI3CN000
+alguien
+alguien
+PI3CN000
+alguna
+alguno
+PI3FS000
+algunas
+alguno
+PI3FP000
+alguno
+alguno
+PI3MS000
+algunos
+alguno
+PI3MP000
+cualesquiera
+cualquiera
+PI3CP000
+cualquiera
+cualquiera
+PI3CS000
+demás
+demás
+PI3CP000
+misma
+mismo
+PI3FS000
+mismas
+mismo
+PI3FP000
+mismo
+mismo
+PI3MS000
+mismos
+mismo
+PI3MP000
+mucha
+mucho
+PI3FS000
+muchas
+mucho
+PI3FP000
+mucho
+mucho
+PI3MS000
+muchos
+mucho
+PI3MP000
+nada
+nada
+PI3CN000
+nadie
+nadie
+PI3CN000
+ninguna
+ninguno
+PI3FS000
+ningunas
+ninguno
+PI3FP000
+ninguno
+ninguno
+PI3MS000
+ningunos
+ninguno
+PI3MP000
+otra
+otro
+PI3FS000
+otras
+otro
+PI3FP000
+otro
+otro
+PI3MS000
+otros
+otro
+PI3MP000
+poca
+poco
+PI3FS000
+pocas
+poco
+PI3FP000
+poco
+poco
+PI3MS000
+pocos
+poco
+PI3MP000
+quienquier
+quienquiera
+PI3CS000
+quienesquiera
+quienquiera
+PI3CP000
+quienquiera
+quienquiera
+PI3CS000
+tanta
+tanto
+PI3FS000
+tantas
+tanto
+PI3FP000
+tanto
+tanto
+PI3MS000
+tantos
+tanto
+PI3MP000
+toda
+todo
+PI3FS000
+todas
+todo
+PI3FP000
+todo
+todo
+PI3MS000
+todos
+todo
+PI3MP000
+última
+último
+PI3FS000
+últimas
+último
+PI3FP000
+último
+último
+PI3MS000
+últimos
+último
+PI3MP000
+una
+uno
+PI3FS000
+unas
+uno
+PI3FP000
+uno
+uno
+PI3MS000
+unos
+uno
+PI3MP000
+varias
+varios
+PI3FP000
+varios
+varios
+PI3MP000
+(interogativos)
+adónde
+adónde
+PT000000
+cómo
+cómo
+PT000000
+cuál
+cuál
+PT3CS000
+cuáles
+cuál
+PT3CP000
+cuándo
+cuándo
+PT000000
+cuánta
+cuánto
+PT3FS000
+cuántas
+cuánto
+PT3FP000
+cuánto
+cuánto
+PT3MS000
+cuántos
+cuánto
+PT3MP000
+dónde
+dónde
+PT000000
+qué
+qué
+PT3CN000
+quién
+quién
+PT3CS000
+quiénes
+quién
+PT3CP000
+(relativos)
+como
+como
+PR000000
+donde
+donde
+PR000000
+cuando
+cuando
+PR000000
+cual
+cual
+PR3CS000
+cuales
+cual
+PR3CP000
+cuanta
+cuanto
+PR3FS000
+cuantas
+cuanto
+PR3FP000
+cuantos
+cuanto
+PR3MP000
+cuya
+cuyo
+PR3FS000
+cuyas
+cuyo
+PR3FP000
+cuyo
+cuyo
+PR3MS000
+cuyos
+cuyo
+PR3MP000
+que
+que
+PR3CN000
+quien
+quien
+PR3CS000
+quienes
+quien
+PR3CP000
+
+adonde PR000000
+ad�nde PT000000
+algo PI0CS000
+alguien PI0CS000
+alguna PI0FS000
+algunas PI0FP000
+alguno PI0MS000
+algunos PI0MP000
+ambas PI0FP000
+ambos PI0MP000
+aquel PD0MS000
+aqu�l PD0MS000
+aquella PD0FS000
+aqu�lla PD0FS000
+aquellas PD0FP000
+aqu�llas PD0FP000
+aquello PD0NS000
+aquellos PD0MP000
+aqu�llos PD0MP000
+bastante PI0CS000
+bastantes PI0CP000
+como PR000000
+c�mo PT000000
+conmigo PP1CSO00
+consigo PP3CNO00
+contigo PP2CSO00
+cual PI0CS000
+cual PR0CS000
+cu�l PT0CS000
+cuales PR0CP000
+cu�les PT0CP000
+cualesquiera PI0CP000
+cualquiera PI0CS000
+cuando PR000000
+cu�ndo PT000000
+cuanta PR0FS000
+cu�nta PT0FS000
+cuantas PR0FP000
+cu�ntas PT0FP000
+cuanto PR0MS000
+cu�nto PT0MS000
+cuantos PR0MP000
+cu�ntos PT0MP000
+cuya PR0FS000
+cuyas PR0FP000
+cuyo PR0MS000
+cuyos PR0MP000
+dem�s PI0CP000
+demasiada PI0FS000
+demasiadas PI0FP000
+demasiado PI0MS000
+demasiados PI0MP000
+donde PR000000
+d�nde PT000000
+�l PP3MS000
+ella PP3FS000
+ellas PP3FP000
+ello PP3NS000
+ellos PP3MP000
+esa PD0FS000
+�sa PD0FS000
+esas PD0FP000
+�sas PD0FP000
+ese PD0MS000
+�se PD0MS000
+eso PD0NS000
+esos PD0MP000
+�sos PD0MP000
+esta PD0FS000
+�sta PD0FS000
+estas PD0FP000
+�stas PD0FP000
+este PD0MS000
+�ste PD0MS000
+esto PD0NS000
+estos PD0MP000
+�stos PD0MP000
+estotra PD0FS000
+estotro PD0MS000
+idem P0000000
+�dem P0000000
+la PP3FSA00
+las PP3FPA00
+le PP3CSD00
+les PP3CPD00
+lo PP3CNA00
+lo PP3MSA00
+los PP3MPA00
+me PP1CS000
+media PI0FS000
+medias PI0FP000
+medio PI0MS000
+medios PI0MP000
+m� PP1CSO00
+misma PI0FS000
+mismas PI0FP000
+mismo PI0MS000
+mismos PI0MP000
+mucha PI0FS000
+muchas PI0FP000
+mucho PI0MS000
+muchos PI0MP000
+nada PI0CS000
+nadie PI0CS000
+ninguna PI0FS000
+ningunas PI0FP000
+ninguno PI0MS000
+ningunos PI0MP000
+nos PP1CP000
+nosotras PP1FP000
+nosotros PP1MP000
+os PP2CP000
+otra PI0FS000
+otras PI0FP000
+otro PI0MS000
+otros PI0MP000
+poca PI0FS000
+pocas PI0FP000
+poco PI0MS000
+pocos PI0MP000
+qu� PE000000
+que PR0CN000
+qu� PT0CN000
+quien PR0CS000
+qui�n PT0CS000
+quienes PR0CP000
+qui�nes PT0CP000
+quienesquiera PI0CP000
+quienquier PI0CS000
+quienquiera PI0CS000
+se PP3CN000
+s� PP3CNO00
+tal PD0CS000
+tales PD0CP000
+tanta PI0FS000
+tantas PI0FP000
+tanto PI0MS000
+tantos PI0MP000
+te PP2CS000
+ti PP2CSO00
+toda PI0FS000
+todas PI0FP000
+todo NCMS000
+todos NCMP000
+t� PP2CSN00
+una PI0FS000
+unas PI0FP000
+uno PI0MS000
+unos PI0MP000
+usted PP2CS00P
+ustedes PP2CP00P
+varias PI0FP000
+varios PI0MP000
+vos PP2CN00P
+vosotras PP2FP000
+vosotros PP2MP000
+yo PP1CSN00

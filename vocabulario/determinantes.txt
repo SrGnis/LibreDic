@@ -1,0 +1,361 @@
+(tripletas)
+(demostrativos)
+aquel
+aquel
+DD3MS00
+aquella
+aquel
+DD3FS00
+aquellas
+aquel
+DD3FP00
+aquellos
+aquel
+DD3MP00
+esa
+ese
+DD3FS00
+esas
+ese
+DD3FP00
+ese
+ese
+DD3MS00
+esos
+ese
+DD3MP00
+esta
+este
+DD3FS00
+estas
+este
+DD3FP00
+este
+este
+DD3MS00
+estos
+este
+DD3MP00
+(posesivos)
+mi
+mi
+DP3CS01
+mis
+mi
+DP3CP01
+tu
+tu
+DP3CS02
+tus
+tu
+DP3CP02
+su
+su
+DP3CS00
+sus
+su
+DP3CP00
+nuestra
+nuestro
+DP3FS04
+nuestras
+nuestro
+DP3FP04
+nuestro
+nuestro
+DP3MS04
+nuestros
+nuestro
+DP3MP04
+vuestra
+vuestro
+DP3FS05
+vuestras
+vuestro
+DP3FP05
+vuestro
+vuestro
+DP3MS05
+vuestros
+vuestro
+DP3MP05
+suya
+suyo
+DP3FS00
+suyas
+suyo
+DP3FP00
+suyo
+suyo
+DP3MS00
+suyos
+suyo
+DP3MP00
+(posesivos)
+cuánta
+cuánto
+DT3FS00
+cuántas
+cuánto
+DT3FP00
+cuánto
+cuánto
+DT3MS00
+cuántos
+cuánto
+DT3MP00
+qué
+qué
+DT3CN00
+(exclamativos)
+qué
+qué
+DE3CN00
+(indefinidos)
+alguna
+alguno
+DI3FS00
+algunas
+alguno
+DI3FP00
+alguno
+alguno
+DI3MS00
+algún
+alguno
+DI3MS00
+algunos
+alguno
+DI3MP00
+bastante
+bastante
+DI3CS00
+bastantes
+bastante
+DI3CP00
+cada
+cada
+DI3CS00
+ninguna
+ninguno
+DI3FS00
+ningunas
+ninguno
+DI3FP00
+ninguno
+ninguno
+DI3MS00
+ningún
+ninguno
+DI3MS00
+ningunos
+ninguno
+DI3MP00
+otra
+otro
+DI3FS00
+otras
+otro
+DI3FP00
+otro
+otro
+DI3MS00
+otros
+otro
+DI3MP00
+sendas
+sendos
+DI3FP00
+sendos
+sendos
+DI3MP00
+tantas
+tanto
+DI3FP00
+tanta
+tanto
+DI3FS00
+tantos
+tanto
+DI3MP00
+tanto
+tanto
+DI3MS00
+todas
+todo
+DI3FP00
+toda
+todo
+DI3FS00
+todos
+todo
+DI3MP00
+todo
+todo
+DI3MS00
+unas
+un
+DI3FP00
+una
+un
+DI3FS00
+unos
+un
+DI3MP00
+un
+un
+DI3MS00
+varias
+varias
+DI3FP00
+varios
+varios
+DI3MP00
+()
+alg�n DI0MS0
+alguna DI0FS0
+algunas DI0FP0
+alguno DI0MS0
+algunos DI0MP0
+ambas DI0FP0
+ambos DI0MP0
+aquel DD0MS0
+aquella DD0FS0
+aquellas DD0FP0
+aquellos DD0MP0
+bastante DI0CS0
+bastantes DI0CP0
+cada DI0CS0
+cierta DI0FS0
+ciertas DI0FP0
+cierto DI0MS0
+ciertos DI0MP0
+cual DD0CS0
+cualesquier DI0CP0
+cualesquiera DI0CP0
+cualquier DI0CS0
+cualquiera DI0CS0
+cu�nta DE0FS0
+cuanta DI0FS0
+cu�nta DT0FS0
+cu�ntas DE0FP0
+cuantas DI0FP0
+cu�ntas DT0FP0
+cu�nto DE0MS0
+cuanto DI0MS0
+cu�nto DT0MS0
+cu�ntos DE0MP0
+cuantos DI0MP0
+cu�ntos DT0MP0
+dem�s DI0CP0
+demasiada DI0FS0
+demasiadas DI0FP0
+demasiado DI0MS0
+demasiados DI0MP0
+diferentes DI0CP0
+distintas DI0FP0
+distintos DI0MP0
+diversas DI0FP0
+diversos DI0MP0
+el DA0MS0
+esa DD0FS0
+esas DD0FP0
+escasa DI0FS0
+escasas DI0FP0
+escas�sima DI0FS0
+escas�simas DI0FP0
+escas�simo DI0MS0
+escas�simos DI0MP0
+escaso DI0MS0
+escasos DI0MP0
+ese DD0MS0
+esos DD0MP0
+esta DD0FS0
+estas DD0FP0
+este DD0MS0
+estos DD0MP0
+la DA0FS0
+las DA0FP0
+lo DA0NS0
+los DA0MP0
+media DI0FS0
+medias DI0FP0
+medio DI0MS0
+medios DI0MP0
+mi DP1CSS
+m�a DP1FSS
+m�as DP1FPS
+m�o DP1MSS
+m�os DP1MPS
+mis DP1CPS
+misma DI0FS0
+mismas DI0FP0
+mism�sima DI0FS0
+mism�simas DI0FP0
+mism�simo DI0MS0
+mism�simos DI0MP0
+mismo DI0MS0
+mismos DI0MP0
+mucha DI0FS0
+muchas DI0FP0
+mucho DI0MS0
+muchos DI0MP0
+ningún DI0MS0
+ninguna DI0FS0
+ningunas DI0FP0
+ninguno DI0MS0
+ningunos DI0MP0
+nuestra DP1FSP
+nuestras DP1FPP
+nuestro DP1MSP
+nuestros DP1MPP
+otra DI0FS0
+otras DI0FP0
+otro DI0MS0
+otros DI0MP0
+poca DI0FS0
+pocas DI0FP0
+poco DI0MS0
+pocos DI0MP0
+propia DI0FS0
+propias DI0FP0
+propio DI0MS0
+propios DI0MP0
+qu� DE0CN0
+qu� DT0CN0
+semejante DD0CS0
+semejantes DD0CP0
+sendas DI0FP0
+sendos DI0MP0
+su DP3CS0
+sus DP3CP0
+suya DP3FS0
+suyas DP3FP0
+suyo DP3MS0
+suyos DP3MP0
+tal DD0CS0
+tales DD0CP0
+tanta DI0FS0
+tantas DI0FP0
+tanto DI0MS0
+tantos DI0MP0
+toda DI0FS0
+todas DI0FP0
+todo DI0MS0
+todos DI0MP0
+tu DP2CSS
+tus DP2CPS
+tuya DP2FSS
+tuyas DP2FPS
+tuyo DP2MSS
+tuyos DP2MPS
+un DI0MS0
+una DI0FS0
+unas DI0FP0
+unos DI0MP0
+varias DI0FP0
+varios DI0MP0
+vuestra DP2FSP
+vuestras DP2FPP
+vuestro DP2MSP
+vuestros DP2MPP
