@@ -7,15 +7,19 @@ save = []
 
 
 def formate(linea):
-    if("NORECONOCIDO" in linea):
-        linea.insert(1, linea[0][-2:])
+    if linea[0] == "irregularizar":
+        linea.insert(1, "AR")
+        linea.insert(3, "")
+        linea.insert(4, "ACTUAL")
+    elif("NORECONOCIDO" in linea):
+        linea.insert(1, linea[0][-2:].upper())
         linea.insert(2, "")
         linea.insert(3, "")
         linea.insert(4, "")
     else:
         linea.append("RECONOCIDO")
-        if("IRREGULAR" in linea):
-            linea.insert(1, linea[0][-2:])
+        if("IRREGULAR" in linea and not( "IR" in linea or "AR" in linea or "ER" in linea)):
+            linea.insert(1, linea[0][-2:].upper())
         if(not ("REFLEXIVO" in linea)):
             linea.insert(3, "NOREFLEXIVO")
 
@@ -23,11 +27,12 @@ def formate(linea):
 
 
 def main():
-    f = open("../verbos.txt", "r")
+    f = open("./verbos.txt", "r")
     for l in f:
         l = l.replace(' ', '')
         l = l.replace(']', '')
         l = l.replace('-', '')
+        l = l.replace('\n', '')
         l = l.split('[')
         l = formate(l)
         save.append(l)
