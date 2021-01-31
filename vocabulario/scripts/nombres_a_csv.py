@@ -1,3 +1,5 @@
+# coding=utf-8
+
 import csv
 import sys
 
@@ -16,8 +18,7 @@ def formate(linea):
     else:
         l.append("PROPIO")
 
-    if(len(linea) != 6):
-
+    if(len(linea[1]) != 8):
         l.append("")
         l.append("")
 
@@ -29,7 +30,7 @@ def formate(linea):
             l.append("FEMENINO")
         else:
             l.append("COMÚN")
-        
+
         if(linea[1][3] == 'M'):
             l.append("SINGULAR")
         elif(linea[1][3] == 'F'):
@@ -43,12 +44,13 @@ def formate(linea):
 def main():
     f = open("nombres.txt", "r")
     for l in f:
-        l = l.split(' ')
-        l = formate(l)
-        save.append(l)
+        if(l != ""):
+            l = l.split(' ')
+            l = formate(l)
+            save.append(l)
     f.close()
 
-    with open('nombres.csv', 'w', newline='') as csvfile:
+    with open('nombres.csv', 'w') as csvfile:
         writer = csv.writer(csvfile, delimiter=',', quoting=csv.QUOTE_MINIMAL)
         writer.writerow(head)
         for r in save:

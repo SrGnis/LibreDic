@@ -1869,7 +1869,7 @@ comisiones_obreras NCFP000
 comité NCMS000
 comité_central_del_partido NCMS000
 comité_econémico_y_social NCMS000
-comité_eje
+comité_ejecutivo NCMS000
 cutivo NCMS000
 comité_olómpico_internacional NCMS000
 comité_organizador NCMS000
