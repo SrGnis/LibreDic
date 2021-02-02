@@ -489,10 +489,10 @@ bruscos AQ0MP0
 brutal AQ0CS0
 brutales AQ0CP0
 buen AQ0MS0
-buena buen AQ0FS0 AQ0FS0
-buenas buen AQ0FP0 AQ0FP0
+buena AQ0FS0
+buenas AQ0FP0
 bueno AQ0MS0
-buenos buen AQ0MP0 AQ0MP0
+buenos AQ0MP0
 burgués AQ0MS0
 burguesa AQ0FS0
 burguesas AQ0FP0
@@ -1740,7 +1740,7 @@ favoritos AQ0MP0
 fea AQ0FS0
 feas AQ0FP0
 felice AQ0CS0
-felices felice AQ0CP0 AQ0CP0
+felices AQ0CP0
 feliz AQ0CS0
 femenina AQ0FS0
 femeninas AQ0FP0
