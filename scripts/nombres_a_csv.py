@@ -3,7 +3,7 @@
 import csv
 import sys
 
-head = ["PALABRA", "CATEGORIA", "TIPO",
+head = ["PALABRA", "CATEGORÍA", "TIPO",
         "GENERO", "NUMERO"]
 save = []
 

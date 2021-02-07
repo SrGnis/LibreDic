@@ -3,7 +3,7 @@
 import csv
 import sys
 
-head = ["PALABRA", "CATEGORIA", "TIPO", "PERSONA",
+head = ["PALABRA", "CATEGORÍA", "TIPO", "PERSONA",
         "GENERO", "NUMERO", "NUMERO_POSEEDOR"]
 save = []
 
@@ -24,7 +24,7 @@ def formate(linea):
         l.append("EXCLAMATIVO")
     else:
         l.append("INDEFINIDO")
-    
+
     if(linea[1][2] == '1'):
         l.append("PRIMERA")
     elif(linea[1][2] == '2'):
