@@ -27,8 +27,7 @@ def formate(linea):
     elif(linea[1][1] == 'R'):
         l.append("RELATIVO")
     else:
-        print("Error en tipo")
-        print(linea[0])
+        l.append("")
 
     if(linea[1][2] == '1'):
         l.append("PRIMERA")
