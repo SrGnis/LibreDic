@@ -1,2 +1,2 @@
-<img src="./estructura.drawio.svg">
+<img src="./structure.png">
 
