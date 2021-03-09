@@ -31,9 +31,9 @@ def formate(linea):
         else:
             l.append("COMÚN")
 
-        if(linea[1][3] == 'M'):
+        if(linea[1][3] == 'S'):
             l.append("SINGULAR")
-        elif(linea[1][3] == 'F'):
+        elif(linea[1][3] == 'P'):
             l.append("PLURAL")
         else:
             l.append("INVARIABLE")
@@ -42,7 +42,7 @@ def formate(linea):
 
 
 def main():
-    f = open("nombres.txt", "r")
+    f = open("./texto_plano/nombres.txt", "r")
     for l in f:
         if(l != ""):
             l = l.split(' ')
@@ -50,7 +50,7 @@ def main():
             save.append(l)
     f.close()
 
-    with open('nombres.csv', 'w') as csvfile:
+    with open('./csv/nombres.csv', 'w') as csvfile:
         writer = csv.writer(csvfile, delimiter=',', quoting=csv.QUOTE_MINIMAL)
         writer.writerow(head)
         for r in save:
