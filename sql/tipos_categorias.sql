@@ -1,0 +1,7 @@
+INSERT INTO TIPOS_CATEGORIAS VALUES
+("VER"),
+("SUS"),
+("ADV"),
+("ADJ"),
+("DET"),
+("PRO");
