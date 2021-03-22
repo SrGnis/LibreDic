@@ -1,2 +1,2 @@
-<img src="./estructura.png">
+<img src="./structure.png">
 
