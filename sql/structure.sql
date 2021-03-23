@@ -1,6 +1,6 @@
 CREATE TABLE `PALABRAS` (
   `id_palabra` int(11) NOT NULL AUTO_INCREMENT,
-  `lema` varchar(30) NOT NULL,
+  `lema` varchar(35) NOT NULL,
   `raiz` int(11) DEFAULT NULL,
   PRIMARY KEY (`id_palabra`),
   UNIQUE KEY `PALABRAS_UN` (`lema`),
