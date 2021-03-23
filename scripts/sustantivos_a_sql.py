@@ -19,18 +19,20 @@ with open('./data/csv/noun.csv', newline='') as csvfile:
             todo.append(row)
 
 with open('./sql/nouns.sql', 'w') as of:
-'''
-    of.write("INSERT IGNORE INTO PALABRAS (lema, raiz) VALUES")
-    for p in todo:
-        of.write("(\"{lema}\",NULL),\n".format(lema=p[0]))
-    of.write(';')
 
-    of.write('\n')
-'''
-    of.write("INSERT INTO CATEGORIAS (id_palabra, id_tipo_categoria) VALUES")
+    conta = 0
     for p in todo:
-        of.write("((SELECT (id_palabra) FROM PALABRAS WHERE lema=\"{lema}\"),(SELECT (id_tipo_categoria) FROM TIPOS_CATEGORIAS WHERE tipo_categoria=\'N\')),\n".format(lema=p[0]))
-    of.write(';')
+        if conta == 0:
+            of.write("INSERT INTO CATEGORIAS (id_palabra, id_tipo_categoria) VALUES \n")
+        of.write("((SELECT (id_palabra) FROM PALABRAS WHERE lema=\"{lema}\"),(SELECT (id_tipo_categoria) FROM TIPOS_CATEGORIAS WHERE tipo_categoria=\'N\'))".format(lema=p[0]))
+        conta += 1
+        if conta == 3000:
+            of.write(';\nCOMMIT;\n')
+            conta = 0
+        else:
+            of.write(',\n')
+
+    of.write(';\nCOMMIT;\n')
 
     of.write('\n')
 '''
@@ -47,5 +49,13 @@ with open('./sql/nouns.sql', 'w') as of:
             for x in range(2,len(r)):
                 of.write("((SELECT (id_tipo_propiedad) FROM TIPOS_PROPIEDADES WHERE tipo_propiedad=\"{tipo_propiedad}\"),(SELECT (id_palabra) FROM PALABRAS WHERE lema=\"{lema}\"), (SELECT (id_tipo_categoria) FROM TIPOS_CATEGORIAS WHERE tipo_categoria=\"SUS\"), (\"{valor}\")),\n".format(tipo_propiedad=header[x].lower(),lema=r[0],valor=r[x].lower()))
     of.write(';')
+'''
+'''
+    of.write("INSERT IGNORE INTO PALABRAS (lema, raiz) VALUES")
+    for p in todo:
+        of.write("(\"{lema}\",NULL),\n".format(lema=p[0]))
+    of.write(';\nCOMMIT;\n')
+
+    of.write('\n')
 '''
 
