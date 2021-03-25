@@ -9,7 +9,7 @@ save = []
 
 
 def main():
-    f = open("data/src/sus.txt", "r")
+    f = open("data/src/noun.txt", "r")
     for l in f:
         if(l != ""):
             l = l.replace('\n', '')
@@ -20,7 +20,7 @@ def main():
             save.append(l)
     f.close()
 
-    with open('data/csv/sus.csv', 'w') as csvfile:
+    with open('data/csv/noun.csv', 'w') as csvfile:
         writer = csv.writer(csvfile, delimiter=',', quoting=csv.QUOTE_MINIMAL)
         writer.writerow(head)
         for r in save:
