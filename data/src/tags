@@ -1,0 +1,170 @@
+A:adjetivo
+    tipo(T)
+        O:ordinal
+        Q:qualificativo
+        P:posesivo
+    degree(D)
+        S:superlativo
+        V:evaluativo
+    genero(G)
+        F:femenino
+        M:masculino
+        C:comun
+    numero(N)
+        S:singular
+        P:plural
+        N:invariable 
+    poseedorpers(PP)
+        1:1
+        2:2
+        3:3 
+    poseedornum(PN)
+        S:singular
+        P:plural
+        N:invariable
+
+C:conjuncion 
+    tipo(T)
+        C:coordinating
+        S:subordinating
+
+D:determinante 
+    tipo(T)
+        A:articulo
+        D:demostrativo
+        I:indefinido
+        P:posesivo
+        T:interrogativo
+        E:exclamativo
+    persona(PR)
+        1:1
+        2:2
+        3:3 
+    genero(G)
+        F:femenino
+        M:masculino
+        C:comun 
+    numero(N)
+        S:singular
+        P:plural
+        N:invariable 
+    poseedornum(PN)
+        S:singular
+        P:plural
+        N:invariable
+N:nombre 
+    tipo(T)
+        C:comun
+        P:propio 
+    genero(G)
+        F:femenino
+        M:masculino
+        C:comun 
+    numero(N)
+        S:singular
+        P:plural
+        N:invariable
+    neclass(NC)
+        S:persona
+        G:lugar
+        O:organizacion
+        V:otro
+    nesubclass(NSC)
+        0:0
+        P:0
+    degree(D)
+        V:evaluativo
+P:pronombre
+    tipo(T)
+        D:demostrativo
+        E:exclamativo
+        I:indefinido
+        P:personal
+        R:relativo
+        T:interrogativo
+    persona(PR)
+        1:1
+        2:2
+        3:3 
+    genero(G)
+        F:femenino
+        M:masculino
+        C:comun
+    numero(N)
+        S:singular
+        P:plural
+        N:invariable 
+    caso(C)
+        N:nominativo
+        A:acusativo
+        D:dativo
+        O:obliccuo 
+    formal(P)
+        P:si
+R:adverbio
+    tipo(T)
+        N:negativo
+        G:general
+S:adposicion 
+    tipo(T)
+        P:preposicion
+V:verbo 
+    tipo(T)
+        M:principal
+        A:auxiliar
+        S:semiauxiliar
+    modo(M)
+        I:indicativo
+        S:subjuntivo
+        M:imperativo
+        P:participio
+        G:gerundio
+        N:infinitivo 
+    tiempo(TN)
+        P:presente
+        I:imperfecto
+        F:futuro
+        S:preterito
+        C:condicional
+    persona(PR)
+        1:1
+        2:2
+        3:3 
+    numero(N)
+        S:singular
+        P:plural
+    genero(G)
+        F:femenino
+        M:masculino
+        C:comun
+Z:numero
+    tipo(T)
+        d:partitivo
+        m:divisa
+        p:porcentaje
+        u:unidad
+W:fecha
+I:intejeccion
+
+Fc:coma
+Fs:etc
+Fd:dos puntos
+Fx:punto y coma
+Fg:guion
+Fe:comillas
+Fh:barra
+Fp:punto
+Fia:interrogacion|abrir
+Fit:interrogacion|cerrar
+Faa:exclamacion|abrir
+Fat:exclamacion|cerrar
+Ft:porcentaje
+Fla:llave|abrir
+Flt:llave|cerrar
+Fca:corchete|abrir
+Fct:corchete|cerrar
+Fpa:parentesis|abrir
+Fpt:parentesis|cerrar
+Fra:comillas|abrir
+Frc:comillas|cerrar
+Fz:other

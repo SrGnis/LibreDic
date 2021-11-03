@@ -1,1 +1,1 @@
-# LibreVoc
+# LibreDic
