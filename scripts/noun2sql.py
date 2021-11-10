@@ -21,9 +21,14 @@ with open('./data/csv/noun.csv', newline='') as csvfile:
 
 
 with open('./sql/inserts/noun_words.sql', 'w') as of:
+    first=True
     of.write('INSERT IGNORE INTO palabras (lema) VALUES\n')
     for p in todo:
-        of.write(',\n("{lema}")'.format(lema=p[0]))
+        if first:
+            of.write('("{lema}")'.format(lema=p[0]))
+            first = False
+        else:
+            of.write(',\n("{lema}")'.format(lema=p[0]))
     of.write(';\nCOMMIT;\n')
 
 with open('./sql/inserts/nouns.sql', 'w') as of:

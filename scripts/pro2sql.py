@@ -9,7 +9,7 @@ todo=[]
 header=[]
 otro=[]
 
-with open('./data/csv/verb.csv', newline='') as csvfile:
+with open('./data/csv/pro.csv', newline='') as csvfile:
     reader = csv.reader(csvfile, delimiter=',', quotechar='|')
     coun = True
     for row in reader:
@@ -19,7 +19,8 @@ with open('./data/csv/verb.csv', newline='') as csvfile:
         else:
             todo.append(row)
 
-with open('./sql/inserts/verb_words.sql', 'w') as of:
+
+with open('./sql/inserts/pro_words.sql', 'w') as of:
     first=True
     of.write('INSERT IGNORE INTO palabras (lema) VALUES\n')
     for p in todo:
@@ -29,9 +30,8 @@ with open('./sql/inserts/verb_words.sql', 'w') as of:
         else:
             of.write(',\n("{lema}")'.format(lema=p[0]))
     of.write(';\nCOMMIT;\n')
-    
 
-with open('./sql/inserts/verbs.sql', 'w') as of:
+with open('./sql/inserts/pro.sql', 'w') as of:
     conta=0
     for p in todo:
         #Sentidos
@@ -40,26 +40,26 @@ with open('./sql/inserts/verbs.sql', 'w') as of:
         
         #Caracteristicas
         of.write('INSERT INTO caracteristicas (id_sentido, id_categoria) VALUES\n')
-        of.write('((SELECT MAX(id) FROM sentidos),(SELECT (id) FROM categorias WHERE tipo_categoria=\'V\'));\n')
+        of.write('((SELECT MAX(id) FROM sentidos),(SELECT (id) FROM categorias WHERE tipo_categoria=\'P\'));\n')
 
         #Propiedades
         of.write('INSERT INTO propiedades (id_tipo_propiedad, valor, id_caracteristicas) VALUES\n')
         of.write('((SELECT (id) FROM tipos_propiedades WHERE tipo_propiedad=\'T\'),(\'{valor}\') ,(SELECT MAX(id) FROM caracteristicas));\n'.format(valor=p[3]))
 
         of.write('INSERT INTO propiedades (id_tipo_propiedad, valor, id_caracteristicas) VALUES\n')
-        of.write('((SELECT (id) FROM tipos_propiedades WHERE tipo_propiedad=\'M\'),(\'{valor}\') ,(SELECT MAX(id) FROM caracteristicas));\n'.format(valor=p[4]))
+        of.write('((SELECT (id) FROM tipos_propiedades WHERE tipo_propiedad=\'PR\'),(\'{valor}\') ,(SELECT MAX(id) FROM caracteristicas));\n'.format(valor=p[4]))
 
         of.write('INSERT INTO propiedades (id_tipo_propiedad, valor, id_caracteristicas) VALUES\n')
-        of.write('((SELECT (id) FROM tipos_propiedades WHERE tipo_propiedad=\'TN\'),(\'{valor}\') ,(SELECT MAX(id) FROM caracteristicas));\n'.format(valor=p[5]))
+        of.write('((SELECT (id) FROM tipos_propiedades WHERE tipo_propiedad=\'G\'),(\'{valor}\') ,(SELECT MAX(id) FROM caracteristicas));\n'.format(valor=p[5]))
 
         of.write('INSERT INTO propiedades (id_tipo_propiedad, valor, id_caracteristicas) VALUES\n')
-        of.write('((SELECT (id) FROM tipos_propiedades WHERE tipo_propiedad=\'PR\'),(\'{valor}\') ,(SELECT MAX(id) FROM caracteristicas));\n'.format(valor=p[6]))
+        of.write('((SELECT (id) FROM tipos_propiedades WHERE tipo_propiedad=\'N\'),(\'{valor}\') ,(SELECT MAX(id) FROM caracteristicas));\n'.format(valor=p[6]))
 
         of.write('INSERT INTO propiedades (id_tipo_propiedad, valor, id_caracteristicas) VALUES\n')
-        of.write('((SELECT (id) FROM tipos_propiedades WHERE tipo_propiedad=\'N\'),(\'{valor}\') ,(SELECT MAX(id) FROM caracteristicas));\n'.format(valor=p[7]))
+        of.write('((SELECT (id) FROM tipos_propiedades WHERE tipo_propiedad=\'C\'),(\'{valor}\') ,(SELECT MAX(id) FROM caracteristicas));\n'.format(valor=p[7]))
 
         of.write('INSERT INTO propiedades (id_tipo_propiedad, valor, id_caracteristicas) VALUES\n')
-        of.write('((SELECT (id) FROM tipos_propiedades WHERE tipo_propiedad=\'G\'),(\'{valor}\') ,(SELECT MAX(id) FROM caracteristicas));\n'.format(valor=p[8]))
+        of.write('((SELECT (id) FROM tipos_propiedades WHERE tipo_propiedad=\'P\'),(\'{valor}\') ,(SELECT MAX(id) FROM caracteristicas));\n'.format(valor=p[8]))
 
         conta += 1
         if conta == 3000:
