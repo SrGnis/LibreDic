@@ -3,7 +3,6 @@ adonde adonde CS
 adonde adonde PR00000
 adónde adónde PE00000
 adónde adónde PT00000
-al a+el SP+DA
 algo algo PI0CS00
 alguien alguien PI0CS00
 alguna alguno DI0FS0
@@ -108,7 +107,6 @@ cuántos cuánto PT0MP00
 cómo cómo PE00000
 cómo cómo PT00000
 de de SP
-del de+el SP+DA
 demasiada demasiado DI0FS0
 demasiada demasiado PI0FS00
 demasiadas demasiado DI0FP0
@@ -120,7 +118,6 @@ demasiados demasiado PI0MP00
 demás demás DI0CP0
 demás demás PI0CP00
 desde desde SP
-desque desde+que SP+CS
 diferentes diferente DI0CP0
 distintas distinto DI0FP0
 distintos distinto DI0MP0
