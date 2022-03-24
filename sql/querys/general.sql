@@ -1,5 +1,5 @@
 #Información de una palabra
-SELECT pal.lema, s.id AS id_sentido, cat.tipo_categoria AS categoria, tp.tipo_propiedad_entero AS propiedad, pro.valor 
+SELECT pal.lema, s.id AS id_sentido, cat.tipo_categoria AS categoria, tp.tipo_propiedad AS propiedad, pro.valor 
 FROM
 (
     SELECT *
