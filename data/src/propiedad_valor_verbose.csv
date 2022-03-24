@@ -81,11 +81,11 @@ V,M,M,imperativo
 V,M,P,participio
 V,M,G,gerundio
 V,M,N,infinitivo
-V,T,P,presente
-V,T,I,imperfecto
-V,T,F,futuro
-V,T,S,pasado
-V,T,C,condicional
+V,TN,P,presente
+V,TN,I,imperfecto
+V,TN,F,futuro
+V,TN,S,pasado
+V,TN,C,condicional
 V,PN,1,1
 V,PN,2,2
 V,PN,3,3
