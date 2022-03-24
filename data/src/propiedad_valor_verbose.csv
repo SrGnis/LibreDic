@@ -73,8 +73,8 @@ R,T,N,negativo
 R,T,G,general
 S,T,P,preposicion
 V,T,M,principal
-V,M,A,auxiliar
-V,M,S,semiauxiliar
+V,T,A,auxiliar
+V,T,S,semiauxiliar
 V,M,I,indicativo
 V,M,S,subjuntivo
 V,M,M,imperativo
