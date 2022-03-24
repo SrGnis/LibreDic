@@ -12,6 +12,21 @@ JOIN categorias cat ON car.id_categoria = cat.id
 JOIN propiedades pro ON car.id = pro.id_caracteristicas 
 JOIN tipos_propiedades tp ON pro.id_tipo_propiedad = tp.id
 
+#Información de una palabra verbose
+SELECT pal.lema, s.id AS id_sentido, cat.tipo_categoria AS categoria, tp.tipo_propiedad AS propiedad, pro.valor, cat.tipo_categoria_entero AS categoria_v, tp.tipo_propiedad_entero AS tipo_v, pvv.verbose AS valor_v 
+FROM
+(
+    SELECT *
+    FROM palabras pal
+    WHERE pal.lema = "casa"
+) AS pal
+JOIN sentidos s ON s.id_palabra = pal.id
+JOIN caracteristicas car ON car.id_sentido = s.id
+JOIN categorias cat ON car.id_categoria = cat.id
+JOIN propiedades pro ON car.id = pro.id_caracteristicas 
+JOIN tipos_propiedades tp ON pro.id_tipo_propiedad = tp.id
+LEFT JOIN propiedad_valor_verbose pvv ON pro.valor = pvv.valor AND tp.tipo_propiedad = pvv.tipo AND cat.tipo_categoria = pvv.categoria;
+
 #Todas la palabras con su categoria
 SELECT 
   tabla.palabra,
