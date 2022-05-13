@@ -23,6 +23,26 @@ JOIN caracteristicas car ON car.id_sentido = s.id
 JOIN propiedades pro ON car.id = pro.id_caracteristicas
 ORDER BY lema;
 
+#Información de palabras sin distingir entre accentos y ordenadas alfabeticamente
+SELECT pal.lema, s.id AS id_sentido, car.categoria, pro.propiedad, pro.valor 
+FROM
+(
+    SELECT *
+    FROM 
+    (
+        SELECT p.id, p.lema COLLATE utf8mb4_general_ci AS lema
+        FROM palabras p 
+    ) pal
+    WHERE pal.lema LIKE "critico"
+) AS pal
+JOIN sentidos s ON s.id_palabra = pal.id
+JOIN caracteristicas car ON car.id_sentido = s.id
+JOIN propiedades pro ON car.id = pro.id_caracteristicas
+ORDER BY lema;
+
+SHOW CHARACTER SET;
+SHOW COLLATION;
+
 #Información de una palabra verbose
 SELECT pal.lema, s.id AS id_sentido, car.categoria, pro.propiedad, pro.valor, cv.verbose AS categoria_v, pv.verbose AS propiedad_v, pvv.verbose AS valor_v
 FROM
