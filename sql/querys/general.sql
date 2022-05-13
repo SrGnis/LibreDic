@@ -40,9 +40,6 @@ JOIN caracteristicas car ON car.id_sentido = s.id
 JOIN propiedades pro ON car.id = pro.id_caracteristicas
 ORDER BY lema;
 
-SHOW CHARACTER SET;
-SHOW COLLATION;
-
 #Información de una palabra verbose
 SELECT pal.lema, s.id AS id_sentido, car.categoria, pro.propiedad, pro.valor, cv.verbose AS categoria_v, pv.verbose AS propiedad_v, pvv.verbose AS valor_v
 FROM
@@ -60,15 +57,15 @@ LEFT JOIN propiedad_valor_verbose pvv ON pro.valor = pvv.valor AND pro.propiedad
 
 #Todas la palabras con su categoria
 SELECT 
-  tabla.palabra,
-  tabla.raiz,
-  tabla.categoria
+    tabla.palabra,
+    tabla.raiz,
+    tabla.categoria
 FROM (
-  SELECT c.id, p.lema AS palabra, r.lema AS raiz, c.categoria 
-  FROM sentidos s 
-  JOIN palabras p ON p.id = s.id_palabra
-  JOIN palabras r ON r.id = s.id_raiz
-  JOIN caracteristicas c ON c.id_sentido = s.id
+    SELECT c.id, p.lema AS palabra, r.lema AS raiz, c.categoria 
+    FROM sentidos s 
+    palabras p ON p.id = s.id_palabra
+    JOIN palabras r ON r.id = s.id_raiz
+    JOIN caracteristicas c ON c.id_sentido = s.id
 ) tabla;
 
 #Solo las palabras de cierta categoria Ej. solo verbos
@@ -124,26 +121,26 @@ JOIN palabras pal ON pal.id = s.id_palabra;
 
 # linea por palabra
 SELECT 
-  tabla.palabra,
-  tabla.raiz,
-  tabla.categoria,
-  t.valor AS tipo,
-  g.valor AS genero,
-  n.valor AS numero
+    tabla.palabra,
+    tabla.raiz,
+    tabla.categoria,
+    t.valor AS tipo,
+    g.valor AS genero,
+    n.valor AS numero
 FROM (
-  SELECT c.id, p.lema AS palabra, r.lema AS raiz, c.categoria 
-  FROM sentidos s 
-  JOIN palabras p ON p.id = s.id_palabra
-  JOIN palabras r ON r.id = s.id_raiz
-  JOIN caracteristicas c ON c.id_sentido = s.id
+    SELECT c.id, p.lema AS palabra, r.lema AS raiz, c.categoria 
+    FROM sentidos s 
+    palabras p ON p.id = s.id_palabra
+    palabras r ON r.id = s.id_raiz
+    caracteristicas c ON c.id_sentido = s.id
 ) tabla
 INNER JOIN propiedades t
-  on tabla.id = t.id_caracteristicas
-  and t.propiedad = 'T'
+    on tabla.id = t.id_caracteristicas
+    and t.propiedad = 'T'
 INNER JOIN propiedades g
-  on tabla.id = g.id_caracteristicas
-  and g.propiedad = 'G'
+    on tabla.id = g.id_caracteristicas
+    g.propiedad = 'G'
 INNER JOIN propiedades n
-  on tabla.id = n.id_caracteristicas
-  and n.propiedad = 'N';
+    on tabla.id = n.id_caracteristicas
+    and n.propiedad = 'N';
  
