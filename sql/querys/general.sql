@@ -10,6 +10,19 @@ JOIN sentidos s ON s.id_palabra = pal.id
 JOIN caracteristicas car ON car.id_sentido = s.id
 JOIN propiedades pro ON car.id = pro.id_caracteristicas;
 
+#Información de palabras y oredenadas alfabeticamente
+SELECT pal.lema COLLATE utf8mb4_general_ci AS lema , s.id AS id_sentido, car.categoria, pro.propiedad, pro.valor 
+FROM
+(
+    SELECT *
+    FROM palabras pal
+    WHERE pal.lema LIKE "terrapl%"
+) AS pal
+JOIN sentidos s ON s.id_palabra = pal.id
+JOIN caracteristicas car ON car.id_sentido = s.id
+JOIN propiedades pro ON car.id = pro.id_caracteristicas
+ORDER BY lema;
+
 #Información de una palabra verbose
 SELECT pal.lema, s.id AS id_sentido, car.categoria, pro.propiedad, pro.valor, cv.verbose AS categoria_v, pv.verbose AS propiedad_v, pvv.verbose AS valor_v
 FROM
