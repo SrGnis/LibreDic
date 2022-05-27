@@ -13,9 +13,15 @@ sed -i -e '$a\ ]' eswiktionary.json
 mongoimport --db eswiktionary --collection palabras --type json --file eswiktionary.json --jsonArray
 rm eswiktionary.json
 
+echo "SELECT lema FROM palabras p;" > sql
+mysql -u user -p LibreDic < sql > lista.csv
+
+mongoimport --db eswiktionary --collection lista --type csv --headerline --fields lema --file lista.csv
+
 #En mongosh
 db = db.getSiblingDB("eswiktionary")
 db.palabras.deleteMany({title: {$regex : ":"}})
-db.palabras.aggregate( [ { $project : { _id: "$title", title : 1, text: "$revision.text.#text" } },{ $out : "out" } ] )
+db.palabras.aggregate( [ { $project : { _id: "$title", title : 1, text: "$revision.text.#text" } },{ $out : "result" } ] )
+db.result.aggregate( [{ $lookup: { from: 'lista', localField: 'title', foreignField: 'lema', as: 'out' }}, { $match: { out: { $size: 1 } }}, { $unset: 'out' }, { $out: 'palabras_filtradas' }]  )
 
 mongoexport --db eswiktionary --collection out --out eswiktionary.json --jsonArray --pretty
